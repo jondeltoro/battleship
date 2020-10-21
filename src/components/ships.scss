@@ -1,0 +1,60 @@
+.ships {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  width: 320px;
+  height: 178px;
+  font-weight: bold;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  img.ship {
+    width: 96px;
+  }
+  img.hp {
+    width: 12.8px;
+  }
+
+  .ship-container {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding: 8px 0 8px 2px;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ships-wrapper {
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px red;
+    width: 65%;
+
+    .ships {
+      width: 90%;
+    }
+    img.ship {
+      width: 102px;
+    }
+    img.hp {
+      width: 15.8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ships-wrapper {
+    display: flex;
+    width: 100%;
+
+    .ships {
+      flex-flow: column;
+      .ship-container {
+        width: 100%;
+      }
+    }
+  }
+}

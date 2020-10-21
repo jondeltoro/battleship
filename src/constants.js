@@ -1,0 +1,1 @@
+export const VALIDATE_ATTACK = 'VALIDATE_ATTACK';

@@ -1,0 +1,43 @@
+.dashboard {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 320px;
+  border: 5px solid #ffb101;
+  box-sizing: border-box;
+  white-space: nowrap;
+
+  .row {
+    width: 100%;
+    height: 10%;
+  }
+  .col {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 10%;
+    border: 1px solid #a6a5a5;
+    box-sizing: border-box;
+    user-select: none;
+
+    img.asset {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    margin-top: 15px;
+    width: 730px;
+    height: 730px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dashboard {
+    margin-right: 15px;
+  }
+}
